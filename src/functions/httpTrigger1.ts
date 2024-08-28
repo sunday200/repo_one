@@ -13,7 +13,7 @@ export async function httpTrigger1(
 
   const name = request.query.get('name') || (await request.text()) || 'world'
 
-  return { body: `Hello, ${name}!` }
+  return { body: `Hello, ${name} trigger success!` }
 }
 
 app.http('try', {

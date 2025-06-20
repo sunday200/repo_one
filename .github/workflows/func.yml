@@ -1,9 +1,9 @@
 name: Build Azure Function (TypeScript)
 
 on:
-  pull_request:
-    branches: [branch-testing]
-  workflow_dispatch: 
+  push:
+    branches:
+      - branch-testing
 
 jobs:
   build:

@@ -1,10 +1,8 @@
 name: Build Azure Function (TypeScript)
 
 on:
-  push:
-    branches:
-      - branch-testing
-
+  pull_request:
+    branches: [branch-testing]
 jobs:
   build:
     runs-on: ubuntu-latest

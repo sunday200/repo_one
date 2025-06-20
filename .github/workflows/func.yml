@@ -4,7 +4,7 @@ on:
   pull_request:
     branches: [branch-testing]
 jobs:
-  build:
+  citest:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
